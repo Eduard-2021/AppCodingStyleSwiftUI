@@ -3,23 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230AEA1127295C2500694659 /* ClassForInitializationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230AEA1027295C2500694659 /* ClassForInitializationWrapper.swift */; };
+		230AEA1827296A9E00694659 /* ButtonBackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230AEA1727296A9E00694659 /* ButtonBackView.swift */; };
 		2310E0F927286F6C00BE558D /* AppCodingStyleSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2310E0F827286F6C00BE558D /* AppCodingStyleSwiftUIApp.swift */; };
-		2310E0FB27286F6C00BE558D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2310E0FA27286F6C00BE558D /* ContentView.swift */; };
+		2310E0FB27286F6C00BE558D /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2310E0FA27286F6C00BE558D /* FirstView.swift */; };
 		2310E0FD27286F7000BE558D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2310E0FC27286F7000BE558D /* Assets.xcassets */; };
 		2310E10027286F7000BE558D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2310E0FF27286F7000BE558D /* Preview Assets.xcassets */; };
+		23268E2D27289349006A84F3 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23268E2C27289349006A84F3 /* SecondView.swift */; };
+		23FEDADD2729A4F1002DF421 /* NewLibraryCodingStyle in Frameworks */ = {isa = PBXBuildFile; productRef = 23FEDADC2729A4F1002DF421 /* NewLibraryCodingStyle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230AEA1027295C2500694659 /* ClassForInitializationWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassForInitializationWrapper.swift; sourceTree = "<group>"; };
+		230AEA1727296A9E00694659 /* ButtonBackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonBackView.swift; sourceTree = "<group>"; };
 		2310E0F527286F6C00BE558D /* AppCodingStyleSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCodingStyleSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2310E0F827286F6C00BE558D /* AppCodingStyleSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCodingStyleSwiftUIApp.swift; sourceTree = "<group>"; };
-		2310E0FA27286F6C00BE558D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2310E0FA27286F6C00BE558D /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		2310E0FC27286F7000BE558D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2310E0FF27286F7000BE558D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2310E10127286F7000BE558D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23268E2C27289349006A84F3 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23FEDADD2729A4F1002DF421 /* NewLibraryCodingStyle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,10 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				2310E0F827286F6C00BE558D /* AppCodingStyleSwiftUIApp.swift */,
-				2310E0FA27286F6C00BE558D /* ContentView.swift */,
-				2310E0FC27286F7000BE558D /* Assets.xcassets */,
+				231443B1272935CA00454550 /* View */,
 				2310E10127286F7000BE558D /* Info.plist */,
 				2310E0FE27286F7000BE558D /* Preview Content */,
+				231443B3272935D600454550 /* Others */,
+				231443B4272935FB00454550 /* Models */,
 			);
 			path = AppCodingStyleSwiftUI;
 			sourceTree = "<group>";
@@ -67,6 +76,32 @@
 				2310E0FF27286F7000BE558D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		231443B1272935CA00454550 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2310E0FA27286F6C00BE558D /* FirstView.swift */,
+				23268E2C27289349006A84F3 /* SecondView.swift */,
+				230AEA1727296A9E00694659 /* ButtonBackView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		231443B3272935D600454550 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2310E0FC27286F7000BE558D /* Assets.xcassets */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		231443B4272935FB00454550 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				230AEA1027295C2500694659 /* ClassForInitializationWrapper.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +120,9 @@
 			dependencies = (
 			);
 			name = AppCodingStyleSwiftUI;
+			packageProductDependencies = (
+				23FEDADC2729A4F1002DF421 /* NewLibraryCodingStyle */,
+			);
 			productName = AppCodingStyleSwiftUI;
 			productReference = 2310E0F527286F6C00BE558D /* AppCodingStyleSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +150,9 @@
 				Base,
 			);
 			mainGroup = 2310E0EC27286F6C00BE558D;
+			packageReferences = (
+				23FEDADB2729A4F1002DF421 /* XCRemoteSwiftPackageReference "NewLibraryCodingStyle" */,
+			);
 			productRefGroup = 2310E0F627286F6C00BE558D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2310E0FB27286F6C00BE558D /* ContentView.swift in Sources */,
+				23268E2D27289349006A84F3 /* SecondView.swift in Sources */,
+				2310E0FB27286F6C00BE558D /* FirstView.swift in Sources */,
+				230AEA1827296A9E00694659 /* ButtonBackView.swift in Sources */,
 				2310E0F927286F6C00BE558D /* AppCodingStyleSwiftUIApp.swift in Sources */,
+				230AEA1127295C2500694659 /* ClassForInitializationWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		23FEDADB2729A4F1002DF421 /* XCRemoteSwiftPackageReference "NewLibraryCodingStyle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Eduard-2021/NewLibraryCodingStyle.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		23FEDADC2729A4F1002DF421 /* NewLibraryCodingStyle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 23FEDADB2729A4F1002DF421 /* XCRemoteSwiftPackageReference "NewLibraryCodingStyle" */;
+			productName = NewLibraryCodingStyle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2310E0ED27286F6C00BE558D /* Project object */;
 }
